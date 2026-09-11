@@ -7,33 +7,42 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            color: white;
             text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            width: 90%;
+            margin: 0;
         }
-
-        h1 {
-             font-size: 3.5rem;
-             color: black;
-        }
-
-        .img-container {
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
-}
-
-        .img-container img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    object-position: center;
-}
     </style>
 </head>
 <body>
-    <h1>If you reading this imma slap you</h1>
-<div class="img-container">
-    <img src="https://i.ytimg.com/vi/0xPX2xHqsCg/sddefault.jpg" alt="description of image">
-</div>
+    <div class="hero">
+        <img src="https://i.ytimg.com/vi/0xPX2xHqsCg/sddefault.jpg" alt="description of image">
+        <h1>If you reading this imma slap you</h1>
+    </div>
 </body>
 </html>
